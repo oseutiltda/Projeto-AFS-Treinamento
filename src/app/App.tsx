@@ -176,10 +176,10 @@ function Navbar() {
         >
           <LogoMark size={34} />
           <div>
-            <div style={{ fontFamily: "Playfair Display, serif", fontWeight: 600, fontSize: "1.05rem", color: "#fff", lineHeight: 1.1 }}>
+            <div style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 600, fontSize: "1.05rem", color: "#fff", lineHeight: 1.1 }}>
               Log Academy
             </div>
-            <div style={{ fontFamily: "Inter, sans-serif", fontSize: "0.55rem", color: "#EBC150", letterSpacing: "0.22em", fontWeight: 500 }}>
+            <div style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.55rem", color: "#EBC150", letterSpacing: "0.22em", fontWeight: 500 }}>
               CAPACITAÇÃO CORPORATIVA
             </div>
           </div>
@@ -190,7 +190,7 @@ function Navbar() {
             <a
               key={l}
               href={`#${l.toLowerCase()}`}
-              style={{ fontFamily: "Inter, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.72)", letterSpacing: "0.04em", textDecoration: "none", transition: "color 0.2s" }}
+              style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.72)", letterSpacing: "0.04em", textDecoration: "none", transition: "color 0.2s" }}
               onMouseEnter={e => (e.currentTarget.style.color = "#EBC150")}
               onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.72)")}
             >
@@ -202,7 +202,7 @@ function Navbar() {
             style={{
               background: "linear-gradient(90deg, #B8860B, #EBC150)",
               color: "#0D1B2A",
-              fontFamily: "Inter, sans-serif",
+              fontFamily: "Rajdhani, sans-serif",
               fontWeight: 700,
               fontSize: "0.75rem",
               letterSpacing: "0.1em",
@@ -228,7 +228,7 @@ function Navbar() {
               key={l}
               href={`#${l.toLowerCase()}`}
               className="block"
-              style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.82)", fontSize: "0.95rem", padding: "0.75rem 0", borderBottom: "1px solid rgba(255,255,255,0.06)", textDecoration: "none" }}
+              style={{ fontFamily: "Rajdhani, sans-serif", color: "rgba(255,255,255,0.82)", fontSize: "0.95rem", padding: "0.75rem 0", borderBottom: "1px solid rgba(255,255,255,0.06)", textDecoration: "none" }}
               onClick={() => setOpen(false)}
             >
               {l}
@@ -274,13 +274,13 @@ function HeroSection() {
             >
               <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.5rem" }}>
                 <div style={{ height: "1px", width: "40px", background: "linear-gradient(90deg, #EBC150, transparent)" }} />
-                <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
+                <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
                   TREINAMENTO CORPORATIVO
                 </span>
               </div>
 
               <h1 style={{
-                fontFamily: "Playfair Display, serif",
+                fontFamily: "Rajdhani, sans-serif",
                 fontSize: "clamp(2rem, 4vw, 3.2rem)",
                 fontWeight: 700,
                 color: "#fff",
@@ -291,16 +291,16 @@ function HeroSection() {
                 <span style={{ color: "#EBC150" }}>logística</span>
               </h1>
 
-              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.75, marginBottom: "1.25rem" }}>
+              <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.75, marginBottom: "1.25rem" }}>
                 A Log Academy desenvolve líderes, gestores e equipes operacionais por meio de treinamentos práticos, workshops e experiências corporativas criadas para empresas de logística, transporte, armazenagem e distribuição.
               </p>
 
-              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.9rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.7, marginBottom: "2rem" }}>
+              <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.9rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.7, marginBottom: "2rem" }}>
                 Mais do que transmitir conteúdo, capacitamos pessoas para aplicar conhecimento na rotina real da operação. Nossa metodologia conecta gestão, processos, indicadores e liderança.
               </p>
 
               <div style={{ borderLeft: "2px solid #EBC150", paddingLeft: "1rem", marginBottom: "2.5rem" }}>
-                <p style={{ fontFamily: "Playfair Display, serif", fontSize: "1rem", fontStyle: "italic", color: "#EBC150", lineHeight: 1.6 }}>
+                <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1rem", fontStyle: "italic", color: "#EBC150", lineHeight: 1.6 }}>
                   Conhecimento aplicado. Método prático. Resultado operacional.
                 </p>
               </div>
@@ -311,7 +311,7 @@ function HeroSection() {
                   style={{
                     background: "linear-gradient(90deg, #B8860B, #EBC150)",
                     color: "#0D1B2A",
-                    fontFamily: "Inter, sans-serif",
+                    fontFamily: "Rajdhani, sans-serif",
                     fontWeight: 700,
                     fontSize: "0.8rem",
                     letterSpacing: "0.1em",
@@ -330,7 +330,7 @@ function HeroSection() {
                   style={{
                     border: "1px solid rgba(235,193,80,0.5)",
                     color: "#EBC150",
-                    fontFamily: "Inter, sans-serif",
+                    fontFamily: "Rajdhani, sans-serif",
                     fontWeight: 500,
                     fontSize: "0.8rem",
                     letterSpacing: "0.1em",
@@ -355,7 +355,7 @@ function HeroSection() {
           >
             <LogoMark size={220} />
             <div style={{ marginTop: "3rem", textAlign: "center" }}>
-              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.68rem", color: "rgba(235,193,80,0.6)", letterSpacing: "0.2em", marginBottom: "1rem" }}>
+              <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.68rem", color: "rgba(235,193,80,0.6)", letterSpacing: "0.2em", marginBottom: "1rem" }}>
                 ESPECIALISTAS EM
               </p>
               <div className="flex flex-wrap justify-center gap-2">
@@ -363,7 +363,7 @@ function HeroSection() {
                   <span
                     key={tag}
                     style={{
-                      fontFamily: "Inter, sans-serif",
+                      fontFamily: "Rajdhani, sans-serif",
                       fontSize: "0.7rem",
                       color: "rgba(255,255,255,0.65)",
                       border: "1px solid rgba(235,193,80,0.2)",
@@ -407,18 +407,18 @@ function PainSection() {
         <FadeIn>
           <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.25rem" }}>
             <div style={{ height: "1px", width: "40px", background: "linear-gradient(90deg, #EBC150, transparent)" }} />
-            <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
+            <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
               DIAGNÓSTICO
             </span>
           </div>
-          <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, maxWidth: "700px", marginBottom: "1.25rem" }}>
+          <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, maxWidth: "700px", marginBottom: "1.25rem" }}>
             Sua operação logística cresce no mesmo ritmo que sua{" "}
             <span style={{ color: "#EBC150" }}>equipe evolui?</span>
           </h2>
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.75, maxWidth: "680px", marginBottom: "1rem" }}>
+          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.75, maxWidth: "680px", marginBottom: "1rem" }}>
             Muitas empresas investem em sistemas, processos e estrutura, mas ainda enfrentam dificuldades porque suas equipes não possuem o mesmo nível de preparo, clareza e método para executar a rotina com padrão.
           </p>
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.75, maxWidth: "680px", marginBottom: "3.5rem" }}>
+          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.75, maxWidth: "680px", marginBottom: "3.5rem" }}>
             Na logística, pequenos desvios geram grandes impactos. Uma liderança sem direcionamento, uma equipe sem padrão ou uma rotina sem indicadores pode resultar em atrasos, retrabalho, baixa produtividade, falhas operacionais e perda de performance.
           </p>
         </FadeIn>
@@ -426,7 +426,7 @@ function PainSection() {
         <div className="grid md:grid-cols-2 gap-6 mb-10">
           <FadeIn delay={0.05}>
             <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(235,193,80,0.1)", borderRadius: "4px", padding: "1.75rem" }}>
-              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.72rem", color: "#EBC150", letterSpacing: "0.2em", marginBottom: "1.25rem" }}>
+              <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.72rem", color: "#EBC150", letterSpacing: "0.2em", marginBottom: "1.25rem" }}>
                 SUA EMPRESA PODE ESTAR ENFRENTANDO:
               </p>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.85rem" }}>
@@ -435,7 +435,7 @@ function PainSection() {
                     <span style={{ color: "#EBC150", marginTop: "3px", flexShrink: 0 }}>
                       <ChevronRight size={14} />
                     </span>
-                    <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.72)", lineHeight: 1.6 }}>
+                    <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.72)", lineHeight: 1.6 }}>
                       {p}
                     </span>
                   </li>
@@ -447,7 +447,7 @@ function PainSection() {
           <FadeIn delay={0.15}>
             <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
               <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(235,193,80,0.1)", borderRadius: "4px", padding: "1.75rem", flex: 1 }}>
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.75 }}>
+                <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.75 }}>
                   A Log Academy atua exatamente nesse ponto: desenvolve pessoas para que processos saiam do papel e se transformem em execução prática dentro da operação.
                 </p>
               </div>
@@ -457,7 +457,7 @@ function PainSection() {
                 borderRadius: "4px",
                 padding: "1.75rem",
               }}>
-                <p style={{ fontFamily: "Playfair Display, serif", fontStyle: "italic", fontSize: "1.05rem", color: "#F8D56B", lineHeight: 1.65 }}>
+                <p style={{ fontFamily: "Rajdhani, sans-serif", fontStyle: "italic", fontSize: "1.05rem", color: "#F8D56B", lineHeight: 1.65 }}>
                   "O problema nem sempre está na falta de esforço da equipe. Muitas vezes, está na ausência de método, clareza e direcionamento prático."
                 </p>
               </div>
@@ -505,18 +505,18 @@ function WhatWeDoSection() {
         <FadeIn>
           <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.25rem" }}>
             <div style={{ height: "1px", width: "40px", background: "linear-gradient(90deg, #EBC150, transparent)" }} />
-            <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
+            <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
               SOLUÇÕES
             </span>
           </div>
-          <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, maxWidth: "680px", marginBottom: "1rem" }}>
+          <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, maxWidth: "680px", marginBottom: "1rem" }}>
             Capacitação corporativa especializada para o{" "}
             <span style={{ color: "#EBC150" }}>setor logístico</span>
           </h2>
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: "660px", marginBottom: "1rem" }}>
+          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: "660px", marginBottom: "1rem" }}>
             A Log Academy foi criada para empresas que precisam desenvolver pessoas, fortalecer processos e melhorar a performance operacional com treinamentos conectados à realidade da logística.
           </p>
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.9rem", color: "rgba(255,255,255,0.5)", lineHeight: 1.75, maxWidth: "660px", marginBottom: "3.5rem" }}>
+          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.9rem", color: "rgba(255,255,255,0.5)", lineHeight: 1.75, maxWidth: "660px", marginBottom: "3.5rem" }}>
             Cada projeto é estruturado de acordo com a necessidade do cliente, considerando o perfil da equipe, o nível de maturidade da operação, os objetivos da liderança e os resultados esperados.
           </p>
         </FadeIn>
@@ -524,14 +524,14 @@ function WhatWeDoSection() {
         <div className="grid md:grid-cols-2 gap-6">
           <FadeIn delay={0.05}>
             <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(235,193,80,0.1)", borderRadius: "4px", padding: "2rem", height: "100%" }}>
-              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.68rem", color: "#EBC150", letterSpacing: "0.22em", marginBottom: "1.5rem" }}>
+              <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.68rem", color: "#EBC150", letterSpacing: "0.22em", marginBottom: "1.5rem" }}>
                 PARA QUEM É
               </p>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.7rem" }}>
                 {audience.map((a, i) => (
                   <li key={i} style={{ display: "flex", gap: "0.65rem", alignItems: "center" }}>
                     <Check size={13} color="#EBC150" style={{ flexShrink: 0 }} />
-                    <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.72)", lineHeight: 1.5 }}>
+                    <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.72)", lineHeight: 1.5 }}>
                       {a}
                     </span>
                   </li>
@@ -542,14 +542,14 @@ function WhatWeDoSection() {
 
           <FadeIn delay={0.12}>
             <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(235,193,80,0.1)", borderRadius: "4px", padding: "2rem", height: "100%" }}>
-              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.68rem", color: "#EBC150", letterSpacing: "0.22em", marginBottom: "1.5rem" }}>
+              <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.68rem", color: "#EBC150", letterSpacing: "0.22em", marginBottom: "1.5rem" }}>
                 O QUE DESENVOLVEMOS
               </p>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.7rem" }}>
                 {topics.map((t, i) => (
                   <li key={i} style={{ display: "flex", gap: "0.65rem", alignItems: "center" }}>
                     <Check size={13} color="#EBC150" style={{ flexShrink: 0 }} />
-                    <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.72)", lineHeight: 1.5 }}>
+                    <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.72)", lineHeight: 1.5 }}>
                       {t}
                     </span>
                   </li>
@@ -561,7 +561,7 @@ function WhatWeDoSection() {
 
         <FadeIn delay={0.1}>
           <div style={{ marginTop: "2.5rem", borderLeft: "2px solid #EBC150", paddingLeft: "1.25rem" }}>
-            <p style={{ fontFamily: "Playfair Display, serif", fontSize: "1rem", fontStyle: "italic", color: "rgba(248,213,107,0.85)", lineHeight: 1.65 }}>
+            <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1rem", fontStyle: "italic", color: "rgba(248,213,107,0.85)", lineHeight: 1.65 }}>
               A Log Academy conecta conhecimento técnico, linguagem prática e aplicação real para transformar capacitação em resultado.
             </p>
           </div>
@@ -615,20 +615,20 @@ function MethodSection() {
         <FadeIn>
           <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.25rem" }}>
             <div style={{ height: "1px", width: "40px", background: "linear-gradient(90deg, #EBC150, transparent)" }} />
-            <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
+            <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
               METODOLOGIA
             </span>
           </div>
-          <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, maxWidth: "680px", marginBottom: "1rem" }}>
+          <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, maxWidth: "680px", marginBottom: "1rem" }}>
             Um método prático para transformar{" "}
             <span style={{ color: "#EBC150" }}>conhecimento em execução</span>
           </h2>
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: "620px", marginBottom: "1rem" }}>
+          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: "620px", marginBottom: "1rem" }}>
             Treinar por treinar não muda uma operação. Por isso, nossos conteúdos são estruturados para que o participante entenda, aplique e leve para a rotina ferramentas simples, práticas e direcionadas ao resultado.
           </p>
           <div style={{ marginBottom: "1rem" }}>
             <span style={{
-              fontFamily: "Playfair Display, serif",
+              fontFamily: "Rajdhani, sans-serif",
               fontSize: "1.6rem",
               fontWeight: 700,
               letterSpacing: "0.35em",
@@ -660,7 +660,7 @@ function MethodSection() {
                   position: "absolute",
                   top: "1rem",
                   right: "1.25rem",
-                  fontFamily: "Playfair Display, serif",
+                  fontFamily: "Rajdhani, sans-serif",
                   fontSize: "3.5rem",
                   fontWeight: 700,
                   color: "rgba(235,193,80,0.08)",
@@ -679,14 +679,14 @@ function MethodSection() {
                   justifyContent: "center",
                   marginBottom: "1rem",
                 }}>
-                  <span style={{ fontFamily: "Playfair Display, serif", fontWeight: 700, fontSize: "1rem", color: "#0D1B2A" }}>
+                  <span style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "1rem", color: "#0D1B2A" }}>
                     {step.letter}
                   </span>
                 </div>
-                <h3 style={{ fontFamily: "Inter, sans-serif", fontSize: "0.88rem", fontWeight: 600, color: "#fff", lineHeight: 1.4, marginBottom: "0.6rem" }}>
+                <h3 style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.88rem", fontWeight: 600, color: "#fff", lineHeight: 1.4, marginBottom: "0.6rem" }}>
                   {step.title}
                 </h3>
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.65 }}>
+                <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.65 }}>
                   {step.text}
                 </p>
               </div>
@@ -696,7 +696,7 @@ function MethodSection() {
 
         <FadeIn>
           <div style={{ background: "linear-gradient(135deg, rgba(235,193,80,0.1), rgba(235,193,80,0.03))", border: "1px solid rgba(235,193,80,0.2)", borderRadius: "4px", padding: "2rem" }}>
-            <p style={{ fontFamily: "Playfair Display, serif", fontSize: "1.05rem", fontStyle: "italic", color: "#F8D56B", lineHeight: 1.65, textAlign: "center" }}>
+            <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1.05rem", fontStyle: "italic", color: "#F8D56B", lineHeight: 1.65, textAlign: "center" }}>
               Nosso foco não é apenas ensinar. É ajudar sua equipe a aplicar melhor, executar melhor e decidir melhor.
             </p>
           </div>
@@ -726,15 +726,15 @@ function ModalitiesSection() {
         <FadeIn>
           <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.25rem" }}>
             <div style={{ height: "1px", width: "40px", background: "linear-gradient(90deg, #EBC150, transparent)" }} />
-            <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
+            <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
               FORMATOS
             </span>
           </div>
-          <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, maxWidth: "700px", marginBottom: "1rem" }}>
+          <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, maxWidth: "700px", marginBottom: "1rem" }}>
             Soluções de treinamento para diferentes{" "}
             <span style={{ color: "#EBC150" }}>necessidades da sua empresa</span>
           </h2>
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: "620px", marginBottom: "3.5rem" }}>
+          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: "620px", marginBottom: "3.5rem" }}>
             Cada empresa possui um momento, uma necessidade e um desafio. Por isso, a Log Academy oferece formatos flexíveis para capacitar equipes, líderes e gestores de forma objetiva, personalizada e prática.
           </p>
         </FadeIn>
@@ -749,28 +749,28 @@ function ModalitiesSection() {
               overflow: "hidden",
             }}>
               <div style={{ background: "linear-gradient(135deg, rgba(235,193,80,0.15), rgba(235,193,80,0.05))", padding: "1.75rem 2rem", borderBottom: "1px solid rgba(235,193,80,0.15)" }}>
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.65rem", color: "#EBC150", letterSpacing: "0.22em", marginBottom: "0.5rem" }}>
+                <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.65rem", color: "#EBC150", letterSpacing: "0.22em", marginBottom: "0.5rem" }}>
                   MODALIDADE 01
                 </p>
-                <h3 style={{ fontFamily: "Playfair Display, serif", fontSize: "1.35rem", fontWeight: 600, color: "#fff", lineHeight: 1.3 }}>
+                <h3 style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1.35rem", fontWeight: 600, color: "#fff", lineHeight: 1.3 }}>
                   Treinamentos Curtos In Company
                 </h3>
               </div>
               <div style={{ padding: "1.75rem 2rem" }}>
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.7, marginBottom: "1.5rem" }}>
+                <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.7, marginBottom: "1.5rem" }}>
                   Formato ideal para empresas que precisam desenvolver temas específicos em curto espaço de tempo, com foco em aplicação imediata na rotina operacional.
                 </p>
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.78rem", color: "rgba(255,255,255,0.45)", lineHeight: 1.6, marginBottom: "1.75rem" }}>
+                <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.78rem", color: "rgba(255,255,255,0.45)", lineHeight: 1.6, marginBottom: "1.75rem" }}>
                   Indicado para empresas que desejam corrigir lacunas pontuais, reforçar conceitos, padronizar práticas ou capacitar equipes sobre temas específicos da operação.
                 </p>
 
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem", marginBottom: "1.75rem" }}>
                   {modalityDetails.map((d, i) => (
                     <div key={i} style={{ background: "rgba(255,255,255,0.03)", borderRadius: "3px", padding: "0.65rem 0.85rem" }}>
-                      <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.62rem", color: "rgba(235,193,80,0.7)", letterSpacing: "0.12em", marginBottom: "0.2rem" }}>
+                      <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.62rem", color: "rgba(235,193,80,0.7)", letterSpacing: "0.12em", marginBottom: "0.2rem" }}>
                         {d.label.toUpperCase()}
                       </p>
-                      <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.8)", fontWeight: 500 }}>
+                      <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.8)", fontWeight: 500 }}>
                         {d.value}
                       </p>
                     </div>
@@ -778,7 +778,7 @@ function ModalitiesSection() {
                 </div>
 
                 <div style={{ background: "rgba(235,193,80,0.06)", border: "1px solid rgba(235,193,80,0.18)", borderRadius: "3px", padding: "0.9rem 1rem", marginBottom: "1.5rem" }}>
-                  <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.8rem", color: "rgba(248,213,107,0.85)", lineHeight: 1.6 }}>
+                  <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.8rem", color: "rgba(248,213,107,0.85)", lineHeight: 1.6 }}>
                     Ideal para quem precisa de uma capacitação rápida, prática e conectada a uma necessidade específica da operação.
                   </p>
                 </div>
@@ -791,7 +791,7 @@ function ModalitiesSection() {
                     gap: "0.5rem",
                     background: "linear-gradient(90deg, #B8860B, #EBC150)",
                     color: "#0D1B2A",
-                    fontFamily: "Inter, sans-serif",
+                    fontFamily: "Rajdhani, sans-serif",
                     fontWeight: 700,
                     fontSize: "0.78rem",
                     letterSpacing: "0.1em",
@@ -824,17 +824,17 @@ function ModalitiesSection() {
                     alignItems: "flex-start",
                   }}
                 >
-                  <span style={{ fontFamily: "Playfair Display, serif", fontSize: "1.2rem", color: "rgba(235,193,80,0.25)", fontWeight: 700, flexShrink: 0, lineHeight: 1 }}>
+                  <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1.2rem", color: "rgba(235,193,80,0.25)", fontWeight: 700, flexShrink: 0, lineHeight: 1 }}>
                     {m.num}
                   </span>
                   <div>
-                    <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.88rem", fontWeight: 600, color: "rgba(255,255,255,0.6)", marginBottom: "0.35rem" }}>
+                    <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.88rem", fontWeight: 600, color: "rgba(255,255,255,0.6)", marginBottom: "0.35rem" }}>
                       {m.title}
                     </p>
-                    <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.8rem", color: "rgba(255,255,255,0.38)", lineHeight: 1.6 }}>
+                    <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.8rem", color: "rgba(255,255,255,0.38)", lineHeight: 1.6 }}>
                       {m.desc}
                     </p>
-                    <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.68rem", color: "#EBC150", letterSpacing: "0.12em", marginTop: "0.6rem", opacity: 0.6 }}>
+                    <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.68rem", color: "#EBC150", letterSpacing: "0.12em", marginTop: "0.6rem", opacity: 0.6 }}>
                       EM BREVE
                     </p>
                   </div>
@@ -861,11 +861,11 @@ function CTASection() {
       <div className="max-w-4xl mx-auto px-6 text-center">
         <FadeIn>
           <LogoMark size={60} />
-          <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, marginTop: "1.5rem", marginBottom: "1.25rem" }}>
+          <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, marginTop: "1.5rem", marginBottom: "1.25rem" }}>
             Pronto para transformar sua{" "}
             <span style={{ color: "#EBC150" }}>operação logística?</span>
           </h2>
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: "560px", margin: "0 auto 2.5rem" }}>
+          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: "560px", margin: "0 auto 2.5rem" }}>
             Fale com a Log Academy e entenda como podemos estruturar um treinamento personalizado para a sua equipe e os seus resultados.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -874,7 +874,7 @@ function CTASection() {
               style={{
                 background: "linear-gradient(90deg, #B8860B, #EBC150)",
                 color: "#0D1B2A",
-                fontFamily: "Inter, sans-serif",
+                fontFamily: "Rajdhani, sans-serif",
                 fontWeight: 700,
                 fontSize: "0.82rem",
                 letterSpacing: "0.1em",
@@ -893,7 +893,7 @@ function CTASection() {
               style={{
                 border: "1px solid rgba(235,193,80,0.4)",
                 color: "#EBC150",
-                fontFamily: "Inter, sans-serif",
+                fontFamily: "Rajdhani, sans-serif",
                 fontWeight: 500,
                 fontSize: "0.82rem",
                 letterSpacing: "0.1em",
@@ -921,31 +921,31 @@ function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-1">
               <LogoMark size={28} />
-              <span style={{ fontFamily: "Playfair Display, serif", fontWeight: 600, fontSize: "0.95rem", color: "#fff" }}>
+              <span style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 600, fontSize: "0.95rem", color: "#fff" }}>
                 Log Academy
               </span>
             </div>
-            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.78rem", color: "rgba(255,255,255,0.38)", lineHeight: 1.65, marginTop: "0.75rem" }}>
+            <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.78rem", color: "rgba(255,255,255,0.38)", lineHeight: 1.65, marginTop: "0.75rem" }}>
               Capacitação corporativa especializada para o setor logístico.
             </p>
           </div>
           <div>
-            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.65rem", color: "#EBC150", letterSpacing: "0.2em", marginBottom: "1rem" }}>NAVEGAÇÃO</p>
+            <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.65rem", color: "#EBC150", letterSpacing: "0.2em", marginBottom: "1rem" }}>NAVEGAÇÃO</p>
             {["Início", "Sobre", "Método", "Modalidades", "Contato"].map((l) => (
-              <a key={l} href={`#${l.toLowerCase()}`} className="block" style={{ fontFamily: "Inter, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.45)", marginBottom: "0.5rem", textDecoration: "none" }}>
+              <a key={l} href={`#${l.toLowerCase()}`} className="block" style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.45)", marginBottom: "0.5rem", textDecoration: "none" }}>
                 {l}
               </a>
             ))}
           </div>
           <div>
-            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.65rem", color: "#EBC150", letterSpacing: "0.2em", marginBottom: "1rem" }}>CONTATO</p>
-            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.45)", marginBottom: "0.5rem" }}>
+            <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.65rem", color: "#EBC150", letterSpacing: "0.2em", marginBottom: "1rem" }}>CONTATO</p>
+            <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.45)", marginBottom: "0.5rem" }}>
               contato@logacademy.com.br
             </p>
           </div>
         </div>
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "1.5rem" }}>
-          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.72rem", color: "rgba(255,255,255,0.25)", textAlign: "center" }}>
+          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.72rem", color: "rgba(255,255,255,0.25)", textAlign: "center" }}>
             © {new Date().getFullYear()} Log Academy. Todos os direitos reservados.
           </p>
         </div>
@@ -957,7 +957,7 @@ function Footer() {
 // ─── Landing Page ─────────────────────────────────────────────────────────────
 function LandingPage() {
   return (
-    <div style={{ fontFamily: "Inter, sans-serif" }}>
+    <div style={{ fontFamily: "Rajdhani, sans-serif" }}>
       <Navbar />
       <HeroSection />
       <PainSection />
