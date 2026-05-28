@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { Menu, X, Check, ArrowRight, ChevronRight } from "lucide-react";
 import svgPaths from "@/imports/Group1/svg-5wpa1iwyht";
+import solucaoImg from "@/imports/image-7.png";
+import metodologiaImg from "@/imports/image-8.png";
 
 // ─── Inline wordmark SVG (Group_5.svg) ───────────────────────────────────────
 function LogoWordmark() {
@@ -176,10 +178,10 @@ function Navbar() {
         >
           <LogoMark size={34} />
           <div>
-            <div style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 600, fontSize: "1.05rem", color: "#fff", lineHeight: 1.1 }}>
-              Log Academy
+            <div style={{ fontFamily: "Playfair Display, serif", fontWeight: 600, fontSize: "1.05rem", color: "#fff", lineHeight: 1.1 }}>
+              Lidera Log Academy
             </div>
-            <div style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.55rem", color: "#EBC150", letterSpacing: "0.22em", fontWeight: 500 }}>
+            <div style={{ fontFamily: "Inter, sans-serif", fontSize: "0.55rem", color: "#EBC150", letterSpacing: "0.22em", fontWeight: 500 }}>
               CAPACITAÇÃO CORPORATIVA
             </div>
           </div>
@@ -190,7 +192,7 @@ function Navbar() {
             <a
               key={l}
               href={`#${l.toLowerCase()}`}
-              style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.72)", letterSpacing: "0.04em", textDecoration: "none", transition: "color 0.2s" }}
+              style={{ fontFamily: "Inter, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.72)", letterSpacing: "0.04em", textDecoration: "none", transition: "color 0.2s" }}
               onMouseEnter={e => (e.currentTarget.style.color = "#EBC150")}
               onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.72)")}
             >
@@ -202,7 +204,7 @@ function Navbar() {
             style={{
               background: "linear-gradient(90deg, #B8860B, #EBC150)",
               color: "#0D1B2A",
-              fontFamily: "Rajdhani, sans-serif",
+              fontFamily: "Inter, sans-serif",
               fontWeight: 700,
               fontSize: "0.75rem",
               letterSpacing: "0.1em",
@@ -228,7 +230,7 @@ function Navbar() {
               key={l}
               href={`#${l.toLowerCase()}`}
               className="block"
-              style={{ fontFamily: "Rajdhani, sans-serif", color: "rgba(255,255,255,0.82)", fontSize: "0.95rem", padding: "0.75rem 0", borderBottom: "1px solid rgba(255,255,255,0.06)", textDecoration: "none" }}
+              style={{ fontFamily: "Inter, sans-serif", color: "rgba(255,255,255,0.82)", fontSize: "0.95rem", padding: "0.75rem 0", borderBottom: "1px solid rgba(255,255,255,0.06)", textDecoration: "none" }}
               onClick={() => setOpen(false)}
             >
               {l}
@@ -274,13 +276,13 @@ function HeroSection() {
             >
               <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.5rem" }}>
                 <div style={{ height: "1px", width: "40px", background: "linear-gradient(90deg, #EBC150, transparent)" }} />
-                <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
+                <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
                   TREINAMENTO CORPORATIVO
                 </span>
               </div>
 
               <h1 style={{
-                fontFamily: "Rajdhani, sans-serif",
+                fontFamily: "Playfair Display, serif",
                 fontSize: "clamp(2rem, 4vw, 3.2rem)",
                 fontWeight: 700,
                 color: "#fff",
@@ -291,16 +293,16 @@ function HeroSection() {
                 <span style={{ color: "#EBC150" }}>logística</span>
               </h1>
 
-              <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.75, marginBottom: "1.25rem" }}>
-                A Log Academy desenvolve líderes, gestores e equipes operacionais por meio de treinamentos práticos, workshops e experiências corporativas criadas para empresas de logística, transporte, armazenagem e distribuição.
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.75, marginBottom: "1.25rem" }}>
+                A Lidera Log Academy desenvolve líderes, gestores e equipes operacionais por meio de treinamentos práticos, workshops e experiências corporativas criadas para empresas de logística, transporte, armazenagem e distribuição.
               </p>
 
-              <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.9rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.7, marginBottom: "2rem" }}>
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.9rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.7, marginBottom: "2rem" }}>
                 Mais do que transmitir conteúdo, capacitamos pessoas para aplicar conhecimento na rotina real da operação. Nossa metodologia conecta gestão, processos, indicadores e liderança.
               </p>
 
               <div style={{ borderLeft: "2px solid #EBC150", paddingLeft: "1rem", marginBottom: "2.5rem" }}>
-                <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1rem", fontStyle: "italic", color: "#EBC150", lineHeight: 1.6 }}>
+                <p style={{ fontFamily: "Playfair Display, serif", fontSize: "1rem", fontStyle: "italic", color: "#EBC150", lineHeight: 1.6 }}>
                   Conhecimento aplicado. Método prático. Resultado operacional.
                 </p>
               </div>
@@ -311,7 +313,7 @@ function HeroSection() {
                   style={{
                     background: "linear-gradient(90deg, #B8860B, #EBC150)",
                     color: "#0D1B2A",
-                    fontFamily: "Rajdhani, sans-serif",
+                    fontFamily: "Inter, sans-serif",
                     fontWeight: 700,
                     fontSize: "0.8rem",
                     letterSpacing: "0.1em",
@@ -330,7 +332,7 @@ function HeroSection() {
                   style={{
                     border: "1px solid rgba(235,193,80,0.5)",
                     color: "#EBC150",
-                    fontFamily: "Rajdhani, sans-serif",
+                    fontFamily: "Inter, sans-serif",
                     fontWeight: 500,
                     fontSize: "0.8rem",
                     letterSpacing: "0.1em",
@@ -346,35 +348,23 @@ function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Right — logo large + industries */}
+          {/* Right — workshop image */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, delay: 0.4 }}
-            className="hidden md:flex flex-col items-center"
+            style={{ position: "relative", borderRadius: "6px", overflow: "hidden", border: "1px solid rgba(235,193,80,0.2)", boxShadow: "0 0 60px rgba(235,193,80,0.07)" }}
           >
-            <LogoMark size={220} />
-            <div style={{ marginTop: "3rem", textAlign: "center" }}>
-              <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.68rem", color: "rgba(235,193,80,0.6)", letterSpacing: "0.2em", marginBottom: "1rem" }}>
-                ESPECIALISTAS EM
-              </p>
-              <div className="flex flex-wrap justify-center gap-2">
-                {["Transportadoras", "Operadores Logísticos", "Armazéns", "Centros de Distribuição", "Indústrias"].map((tag) => (
-                  <span
-                    key={tag}
-                    style={{
-                      fontFamily: "Rajdhani, sans-serif",
-                      fontSize: "0.7rem",
-                      color: "rgba(255,255,255,0.65)",
-                      border: "1px solid rgba(235,193,80,0.2)",
-                      padding: "0.3rem 0.75rem",
-                      borderRadius: "2px",
-                    }}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
+            <img
+              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Treinamento corporativo"
+              style={{ width: "100%", height: "460px", objectFit: "cover", display: "block" }}
+            />
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, transparent 50%, rgba(13,27,42,0.7) 100%)" }} />
+            <div style={{ position: "absolute", bottom: "1.5rem", left: "1.5rem" }}>
+              <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.68rem", color: "#EBC150", letterSpacing: "0.2em" }}>
+                TREINAMENTOS IN COMPANY
+              </span>
             </div>
           </motion.div>
         </div>
@@ -404,60 +394,52 @@ function PainSection() {
       style={{ background: "#0A1627", padding: "6rem 0" }}
     >
       <div className="max-w-7xl mx-auto px-6">
-        <FadeIn>
-          <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.25rem" }}>
-            <div style={{ height: "1px", width: "40px", background: "linear-gradient(90deg, #EBC150, transparent)" }} />
-            <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
-              DIAGNÓSTICO
-            </span>
-          </div>
-          <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, maxWidth: "700px", marginBottom: "1.25rem" }}>
-            Sua operação logística cresce no mesmo ritmo que sua{" "}
-            <span style={{ color: "#EBC150" }}>equipe evolui?</span>
-          </h2>
-          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.75, maxWidth: "680px", marginBottom: "1rem" }}>
-            Muitas empresas investem em sistemas, processos e estrutura, mas ainda enfrentam dificuldades porque suas equipes não possuem o mesmo nível de preparo, clareza e método para executar a rotina com padrão.
-          </p>
-          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.75, maxWidth: "680px", marginBottom: "3.5rem" }}>
-            Na logística, pequenos desvios geram grandes impactos. Uma liderança sem direcionamento, uma equipe sem padrão ou uma rotina sem indicadores pode resultar em atrasos, retrabalho, baixa produtividade, falhas operacionais e perda de performance.
-          </p>
-        </FadeIn>
-
-        <div className="grid md:grid-cols-2 gap-6 mb-10">
-          <FadeIn delay={0.05}>
-            <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(235,193,80,0.1)", borderRadius: "4px", padding: "1.75rem" }}>
-              <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.72rem", color: "#EBC150", letterSpacing: "0.2em", marginBottom: "1.25rem" }}>
-                SUA EMPRESA PODE ESTAR ENFRENTANDO:
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <FadeIn>
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.25rem" }}>
+                <div style={{ height: "1px", width: "40px", background: "linear-gradient(90deg, #EBC150, transparent)" }} />
+                <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>DIAGNÓSTICO</span>
+              </div>
+              <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, marginBottom: "1.25rem" }}>
+                Sua operação logística cresce no mesmo ritmo que sua{" "}
+                <span style={{ color: "#EBC150" }}>equipe evolui?</span>
+              </h2>
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.75, marginBottom: "1rem" }}>
+                Muitas empresas investem em sistemas, processos e estrutura, mas ainda enfrentam dificuldades porque suas equipes não possuem o mesmo nível de preparo, clareza e método para executar a rotina com padrão.
               </p>
-              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.85rem" }}>
-                {problems.map((p, i) => (
-                  <li key={i} style={{ display: "flex", gap: "0.75rem", alignItems: "flex-start" }}>
-                    <span style={{ color: "#EBC150", marginTop: "3px", flexShrink: 0 }}>
-                      <ChevronRight size={14} />
-                    </span>
-                    <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.72)", lineHeight: 1.6 }}>
-                      {p}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.75, marginBottom: "2rem" }}>
+                Na logística, pequenos desvios geram grandes impactos. Uma liderança sem direcionamento, uma equipe sem padrão ou uma rotina sem indicadores pode resultar em atrasos, retrabalho, baixa produtividade, falhas operacionais e perda de performance.
+              </p>
+              <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(235,193,80,0.1)", borderRadius: "4px", padding: "1.75rem" }}>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.72rem", color: "#EBC150", letterSpacing: "0.2em", marginBottom: "1.25rem" }}>SUA EMPRESA PODE ESTAR ENFRENTANDO:</p>
+                <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.85rem" }}>
+                  {problems.map((p, i) => (
+                    <li key={i} style={{ display: "flex", gap: "0.75rem", alignItems: "flex-start" }}>
+                      <span style={{ color: "#EBC150", marginTop: "3px", flexShrink: 0 }}><ChevronRight size={14} /></span>
+                      <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.72)", lineHeight: 1.6 }}>{p}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </FadeIn>
 
           <FadeIn delay={0.15}>
-            <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
-              <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(235,193,80,0.1)", borderRadius: "4px", padding: "1.75rem", flex: 1 }}>
-                <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.75 }}>
-                  A Log Academy atua exatamente nesse ponto: desenvolve pessoas para que processos saiam do papel e se transformem em execução prática dentro da operação.
-                </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
+              <div style={{ position: "relative", borderRadius: "6px", overflow: "hidden", border: "1px solid rgba(235,193,80,0.2)" }}>
+                <img
+                  src="https://images.unsplash.com/photo-1748609160056-7b95f30041f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Indicadores gerenciais"
+                  style={{ width: "100%", height: "420px", objectFit: "cover", display: "block" }}
+                />
+                <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, transparent 50%, rgba(10,22,39,0.75) 100%)" }} />
+                <div style={{ position: "absolute", bottom: "1rem", left: "1.25rem" }}>
+                  <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.65rem", color: "#EBC150", letterSpacing: "0.2em" }}>INDICADORES E KPIs</span>
+                </div>
               </div>
-              <div style={{
-                background: "linear-gradient(135deg, rgba(235,193,80,0.12), rgba(235,193,80,0.05))",
-                border: "1px solid rgba(235,193,80,0.3)",
-                borderRadius: "4px",
-                padding: "1.75rem",
-              }}>
-                <p style={{ fontFamily: "Rajdhani, sans-serif", fontStyle: "italic", fontSize: "1.05rem", color: "#F8D56B", lineHeight: 1.65 }}>
+              <div style={{ background: "linear-gradient(135deg, rgba(235,193,80,0.12), rgba(235,193,80,0.05))", border: "1px solid rgba(235,193,80,0.3)", borderRadius: "4px", padding: "1.5rem" }}>
+                <p style={{ fontFamily: "Playfair Display, serif", fontStyle: "italic", fontSize: "1rem", color: "#F8D56B", lineHeight: 1.65 }}>
                   "O problema nem sempre está na falta de esforço da equipe. Muitas vezes, está na ausência de método, clareza e direcionamento prático."
                 </p>
               </div>
@@ -495,6 +477,57 @@ const topics = [
   "Tecnologia, automação e tomada de decisão",
 ];
 
+function ModalityHoverCard({ num, title, text, indicatedFor, characteristics, quote }: {
+  num: string; title: string; text: string; indicatedFor: string; characteristics: string[]; quote: string;
+}) {
+  const [hovered, setHovered] = useState(false);
+  return (
+    <div
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        background: hovered ? "rgba(255,255,255,0.05)" : "rgba(255,255,255,0.025)",
+        border: hovered ? "1px solid rgba(235,193,80,0.25)" : "1px solid rgba(235,193,80,0.08)",
+        borderRadius: "4px",
+        overflow: "hidden",
+        transition: "background 0.3s, border-color 0.3s",
+        cursor: "default",
+      }}
+    >
+      <div style={{ background: hovered ? "linear-gradient(135deg, rgba(235,193,80,0.12), rgba(235,193,80,0.04))" : "transparent", padding: "1.25rem 1.5rem", borderBottom: hovered ? "1px solid rgba(235,193,80,0.15)" : "1px solid transparent", transition: "background 0.3s, border-color 0.3s" }}>
+        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.65rem", color: "rgba(235,193,80,0.6)", letterSpacing: "0.22em", marginBottom: "0.35rem" }}>
+          MODALIDADE {num}
+        </p>
+        <h3 style={{ fontFamily: "Playfair Display, serif", fontSize: "1.05rem", fontWeight: 600, color: hovered ? "#fff" : "rgba(255,255,255,0.6)", lineHeight: 1.3, transition: "color 0.3s" }}>
+          {title}
+        </h3>
+      </div>
+      <div style={{ padding: hovered ? "1.25rem 1.5rem" : "0 1.5rem", maxHeight: hovered ? "700px" : "0", overflow: "hidden", transition: "max-height 0.5s ease, padding 0.3s ease, opacity 0.3s", opacity: hovered ? 1 : 0 }}>
+        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.85rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.7, marginBottom: "1rem" }}>
+          {text}
+        </p>
+        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.72rem", color: "rgba(255,255,255,0.4)", lineHeight: 1.6, marginBottom: "1rem" }}>
+          <span style={{ color: "rgba(235,193,80,0.6)", letterSpacing: "0.1em", fontSize: "0.62rem" }}>INDICADO PARA — </span>{indicatedFor}
+        </p>
+        <ul style={{ listStyle: "none", padding: 0, margin: "0 0 1rem 0", display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+          {characteristics.map((c, i) => (
+            <li key={i} style={{ display: "flex", gap: "0.6rem", alignItems: "flex-start" }}>
+              <Check size={12} color="#EBC150" style={{ flexShrink: 0, marginTop: "0.2rem" }} />
+              <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.8rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.5 }}>{c}</span>
+            </li>
+          ))}
+        </ul>
+        <div style={{ background: "rgba(235,193,80,0.06)", border: "1px solid rgba(235,193,80,0.18)", borderRadius: "3px", padding: "0.75rem 1rem", marginBottom: "1rem" }}>
+          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.78rem", color: "rgba(248,213,107,0.85)", lineHeight: 1.6 }}>{quote}</p>
+        </div>
+        <a href="#contato" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "linear-gradient(90deg, #B8860B, #EBC150)", color: "#0D1B2A", fontFamily: "Inter, sans-serif", fontWeight: 700, fontSize: "0.75rem", letterSpacing: "0.1em", padding: "0.7rem 1.5rem", borderRadius: "2px", textDecoration: "none" }}>
+          SOLICITAR TREINAMENTO <ArrowRight size={12} />
+        </a>
+      </div>
+    </div>
+  );
+}
+
 function WhatWeDoSection() {
   return (
     <section
@@ -502,56 +535,69 @@ function WhatWeDoSection() {
       style={{ background: "#0D1B2A", padding: "6rem 0" }}
     >
       <div className="max-w-7xl mx-auto px-6">
-        <FadeIn>
-          <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.25rem" }}>
-            <div style={{ height: "1px", width: "40px", background: "linear-gradient(90deg, #EBC150, transparent)" }} />
-            <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
-              SOLUÇÕES
-            </span>
-          </div>
-          <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, maxWidth: "680px", marginBottom: "1rem" }}>
-            Capacitação corporativa especializada para o{" "}
-            <span style={{ color: "#EBC150" }}>setor logístico</span>
-          </h2>
-          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: "660px", marginBottom: "1rem" }}>
-            A Log Academy foi criada para empresas que precisam desenvolver pessoas, fortalecer processos e melhorar a performance operacional com treinamentos conectados à realidade da logística.
-          </p>
-          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.9rem", color: "rgba(255,255,255,0.5)", lineHeight: 1.75, maxWidth: "660px", marginBottom: "3.5rem" }}>
-            Cada projeto é estruturado de acordo com a necessidade do cliente, considerando o perfil da equipe, o nível de maturidade da operação, os objetivos da liderança e os resultados esperados.
-          </p>
-        </FadeIn>
+        <div className="grid md:grid-cols-2 gap-12 items-center" style={{ marginBottom: "4rem" }}>
+          <FadeIn>
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.25rem" }}>
+                <div style={{ height: "1px", width: "40px", background: "linear-gradient(90deg, #EBC150, transparent)" }} />
+                <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>SOLUÇÕES</span>
+              </div>
+              <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, marginBottom: "1rem" }}>
+                Capacitação corporativa especializada para o{" "}
+                <span style={{ color: "#EBC150" }}>setor logístico</span>
+              </h2>
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, marginBottom: "1rem" }}>
+                A Lidera Log Academy foi criada para empresas que precisam desenvolver pessoas, fortalecer processos e melhorar a performance operacional com treinamentos conectados à realidade da logística.
+              </p>
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.9rem", color: "rgba(255,255,255,0.5)", lineHeight: 1.75 }}>
+                Cada projeto é estruturado de acordo com a necessidade do cliente, considerando o perfil da equipe, o nível de maturidade da operação, os objetivos da liderança e os resultados esperados.
+              </p>
+            </div>
+          </FadeIn>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          <FadeIn delay={0.05}>
-            <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(235,193,80,0.1)", borderRadius: "4px", padding: "2rem", height: "100%" }}>
-              <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.68rem", color: "#EBC150", letterSpacing: "0.22em", marginBottom: "1.5rem" }}>
+          <FadeIn delay={0.15}>
+            <div style={{ position: "relative", borderRadius: "6px", overflow: "hidden", border: "1px solid rgba(235,193,80,0.2)" }}>
+              <img
+                src={solucaoImg}
+                alt="Reunião de equipe logística"
+                style={{ width: "100%", height: "420px", objectFit: "cover", display: "block" }}
+              />
+              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, transparent 50%, rgba(10,22,39,0.8) 100%)" }} />
+              <div style={{ position: "absolute", bottom: "1.5rem", left: "1.5rem", right: "1.5rem" }}>
+                <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.65rem", color: "#EBC150", letterSpacing: "0.2em", display: "block", marginBottom: "0.4rem" }}>OPERAÇÃO LOGÍSTICA</span>
+                <p style={{ fontFamily: "Playfair Display, serif", fontSize: "0.95rem", color: "#fff", lineHeight: 1.5 }}>Capacitação conectada à realidade da sua operação</p>
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6" style={{ alignItems: "stretch" }}>
+          <FadeIn delay={0.05} className="flex">
+            <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(235,193,80,0.1)", borderRadius: "4px", padding: "1.75rem", flex: 1 }}>
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.68rem", color: "#EBC150", letterSpacing: "0.22em", marginBottom: "1.25rem" }}>
                 PARA QUEM É
               </p>
-              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.7rem" }}>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.6rem" }}>
                 {audience.map((a, i) => (
                   <li key={i} style={{ display: "flex", gap: "0.65rem", alignItems: "center" }}>
                     <Check size={13} color="#EBC150" style={{ flexShrink: 0 }} />
-                    <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.72)", lineHeight: 1.5 }}>
-                      {a}
-                    </span>
+                    <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.72)", lineHeight: 1.5 }}>{a}</span>
                   </li>
                 ))}
               </ul>
             </div>
           </FadeIn>
 
-          <FadeIn delay={0.12}>
-            <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(235,193,80,0.1)", borderRadius: "4px", padding: "2rem", height: "100%" }}>
-              <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.68rem", color: "#EBC150", letterSpacing: "0.22em", marginBottom: "1.5rem" }}>
+          <FadeIn delay={0.1} className="flex">
+            <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(235,193,80,0.1)", borderRadius: "4px", padding: "1.75rem", flex: 1 }}>
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.68rem", color: "#EBC150", letterSpacing: "0.22em", marginBottom: "1.25rem" }}>
                 O QUE DESENVOLVEMOS
               </p>
-              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.7rem" }}>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.6rem" }}>
                 {topics.map((t, i) => (
                   <li key={i} style={{ display: "flex", gap: "0.65rem", alignItems: "center" }}>
                     <Check size={13} color="#EBC150" style={{ flexShrink: 0 }} />
-                    <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.72)", lineHeight: 1.5 }}>
-                      {t}
-                    </span>
+                    <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.72)", lineHeight: 1.5 }}>{t}</span>
                   </li>
                 ))}
               </ul>
@@ -561,8 +607,8 @@ function WhatWeDoSection() {
 
         <FadeIn delay={0.1}>
           <div style={{ marginTop: "2.5rem", borderLeft: "2px solid #EBC150", paddingLeft: "1.25rem" }}>
-            <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1rem", fontStyle: "italic", color: "rgba(248,213,107,0.85)", lineHeight: 1.65 }}>
-              A Log Academy conecta conhecimento técnico, linguagem prática e aplicação real para transformar capacitação em resultado.
+            <p style={{ fontFamily: "Playfair Display, serif", fontSize: "1rem", fontStyle: "italic", color: "rgba(248,213,107,0.85)", lineHeight: 1.65 }}>
+              A Lidera Log Academy conecta conhecimento técnico, linguagem prática e aplicação real para transformar capacitação em resultado.
             </p>
           </div>
         </FadeIn>
@@ -613,36 +659,51 @@ function MethodSection() {
     >
       <div className="max-w-7xl mx-auto px-6">
         <FadeIn>
-          <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.25rem" }}>
-            <div style={{ height: "1px", width: "40px", background: "linear-gradient(90deg, #EBC150, transparent)" }} />
-            <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
-              METODOLOGIA
-            </span>
+          <div className="grid md:grid-cols-2 gap-12 items-center" style={{ marginBottom: "4rem" }}>
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.25rem" }}>
+                <div style={{ height: "1px", width: "40px", background: "linear-gradient(90deg, #EBC150, transparent)" }} />
+                <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
+                  METODOLOGIA
+                </span>
+              </div>
+              <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, marginBottom: "1rem" }}>
+                Um método prático para transformar{" "}
+                <span style={{ color: "#EBC150" }}>conhecimento em execução</span>
+              </h2>
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, marginBottom: "1.5rem" }}>
+                Treinar por treinar não muda uma operação. Por isso, nossos conteúdos são estruturados para que o participante entenda, aplique e leve para a rotina ferramentas simples, práticas e direcionadas ao resultado.
+              </p>
+              <div style={{ marginBottom: "1rem" }}>
+                <span style={{
+                  fontFamily: "Playfair Display, serif",
+                  fontSize: "1.6rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.35em",
+                  background: "linear-gradient(90deg, #CC9913, #F8D56B, #EBC150)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}>
+                  MÉTODO A.P.L.I.C.A.
+                </span>
+              </div>
+              <div style={{ height: "1px", background: "linear-gradient(90deg, rgba(235,193,80,0.4), transparent)" }} />
+            </div>
+            <div style={{ position: "relative", borderRadius: "6px", overflow: "hidden", border: "1px solid rgba(235,193,80,0.2)" }}>
+              <img
+                src={metodologiaImg}
+                alt="Metodologia de treinamento"
+                style={{ width: "100%", height: "420px", objectFit: "cover", display: "block" }}
+              />
+              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, transparent 45%, rgba(9,21,35,0.75) 100%)" }} />
+              <div style={{ position: "absolute", bottom: "1.25rem", left: "1.5rem" }}>
+                <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.65rem", color: "#EBC150", letterSpacing: "0.2em" }}>MÉTODO ESTRUTURADO</span>
+              </div>
+            </div>
           </div>
-          <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, maxWidth: "680px", marginBottom: "1rem" }}>
-            Um método prático para transformar{" "}
-            <span style={{ color: "#EBC150" }}>conhecimento em execução</span>
-          </h2>
-          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: "620px", marginBottom: "1rem" }}>
-            Treinar por treinar não muda uma operação. Por isso, nossos conteúdos são estruturados para que o participante entenda, aplique e leve para a rotina ferramentas simples, práticas e direcionadas ao resultado.
-          </p>
-          <div style={{ marginBottom: "1rem" }}>
-            <span style={{
-              fontFamily: "Rajdhani, sans-serif",
-              fontSize: "1.6rem",
-              fontWeight: 700,
-              letterSpacing: "0.35em",
-              background: "linear-gradient(90deg, #CC9913, #F8D56B, #EBC150)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}>
-              MÉTODO A.P.L.I.C.A.
-            </span>
-          </div>
-          <div style={{ height: "1px", background: "linear-gradient(90deg, rgba(235,193,80,0.4), transparent)", marginBottom: "3rem" }} />
         </FadeIn>
 
-        <div className="grid md:grid-cols-3 gap-4 mb-10">
+        <div className="grid md:grid-cols-3 gap-5 mb-12">
           {aplica.map((step, i) => (
             <FadeIn key={i} delay={i * 0.08}>
               <div
@@ -660,7 +721,7 @@ function MethodSection() {
                   position: "absolute",
                   top: "1rem",
                   right: "1.25rem",
-                  fontFamily: "Rajdhani, sans-serif",
+                  fontFamily: "Playfair Display, serif",
                   fontSize: "3.5rem",
                   fontWeight: 700,
                   color: "rgba(235,193,80,0.08)",
@@ -679,14 +740,14 @@ function MethodSection() {
                   justifyContent: "center",
                   marginBottom: "1rem",
                 }}>
-                  <span style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "1rem", color: "#0D1B2A" }}>
+                  <span style={{ fontFamily: "Playfair Display, serif", fontWeight: 700, fontSize: "1rem", color: "#0D1B2A" }}>
                     {step.letter}
                   </span>
                 </div>
-                <h3 style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.88rem", fontWeight: 600, color: "#fff", lineHeight: 1.4, marginBottom: "0.6rem" }}>
+                <h3 style={{ fontFamily: "Inter, sans-serif", fontSize: "0.88rem", fontWeight: 600, color: "#fff", lineHeight: 1.4, marginBottom: "0.6rem" }}>
                   {step.title}
                 </h3>
-                <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.65 }}>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.65 }}>
                   {step.text}
                 </p>
               </div>
@@ -696,7 +757,7 @@ function MethodSection() {
 
         <FadeIn>
           <div style={{ background: "linear-gradient(135deg, rgba(235,193,80,0.1), rgba(235,193,80,0.03))", border: "1px solid rgba(235,193,80,0.2)", borderRadius: "4px", padding: "2rem" }}>
-            <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1.05rem", fontStyle: "italic", color: "#F8D56B", lineHeight: 1.65, textAlign: "center" }}>
+            <p style={{ fontFamily: "Playfair Display, serif", fontSize: "1.05rem", fontStyle: "italic", color: "#F8D56B", lineHeight: 1.65, textAlign: "center" }}>
               Nosso foco não é apenas ensinar. É ajudar sua equipe a aplicar melhor, executar melhor e decidir melhor.
             </p>
           </div>
@@ -709,10 +770,8 @@ function MethodSection() {
 // ─── Modalities — Dobra 5 ─────────────────────────────────────────────────────
 const modalityDetails = [
   { label: "Duração", value: "2h30" },
-  { label: "Participantes", value: "Até 15" },
   { label: "Formato", value: "Aula prática e objetiva" },
   { label: "Conteúdo", value: "Definido conforme necessidade" },
-  { label: "Entregável", value: "Guia digital de aplicação" },
   { label: "Aplicação", value: "Plano de execução D+0" },
 ];
 
@@ -726,16 +785,16 @@ function ModalitiesSection() {
         <FadeIn>
           <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.25rem" }}>
             <div style={{ height: "1px", width: "40px", background: "linear-gradient(90deg, #EBC150, transparent)" }} />
-            <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
+            <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.7rem", color: "#EBC150", letterSpacing: "0.25em", fontWeight: 500 }}>
               FORMATOS
             </span>
           </div>
-          <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, maxWidth: "700px", marginBottom: "1rem" }}>
+          <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, maxWidth: "700px", marginBottom: "1rem" }}>
             Soluções de treinamento para diferentes{" "}
             <span style={{ color: "#EBC150" }}>necessidades da sua empresa</span>
           </h2>
-          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: "620px", marginBottom: "3.5rem" }}>
-            Cada empresa possui um momento, uma necessidade e um desafio. Por isso, a Log Academy oferece formatos flexíveis para capacitar equipes, líderes e gestores de forma objetiva, personalizada e prática.
+          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: "620px", marginBottom: "4rem" }}>
+            Cada empresa possui um momento, uma necessidade e um desafio. Por isso, a Lidera Log Academy oferece formatos flexíveis para capacitar equipes, líderes e gestores de forma objetiva, personalizada e prática.
           </p>
         </FadeIn>
 
@@ -749,28 +808,28 @@ function ModalitiesSection() {
               overflow: "hidden",
             }}>
               <div style={{ background: "linear-gradient(135deg, rgba(235,193,80,0.15), rgba(235,193,80,0.05))", padding: "1.75rem 2rem", borderBottom: "1px solid rgba(235,193,80,0.15)" }}>
-                <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.65rem", color: "#EBC150", letterSpacing: "0.22em", marginBottom: "0.5rem" }}>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.65rem", color: "#EBC150", letterSpacing: "0.22em", marginBottom: "0.5rem" }}>
                   MODALIDADE 01
                 </p>
-                <h3 style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1.35rem", fontWeight: 600, color: "#fff", lineHeight: 1.3 }}>
+                <h3 style={{ fontFamily: "Playfair Display, serif", fontSize: "1.35rem", fontWeight: 600, color: "#fff", lineHeight: 1.3 }}>
                   Treinamentos Curtos In Company
                 </h3>
               </div>
               <div style={{ padding: "1.75rem 2rem" }}>
-                <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.7, marginBottom: "1.5rem" }}>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.7, marginBottom: "1.5rem" }}>
                   Formato ideal para empresas que precisam desenvolver temas específicos em curto espaço de tempo, com foco em aplicação imediata na rotina operacional.
                 </p>
-                <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.78rem", color: "rgba(255,255,255,0.45)", lineHeight: 1.6, marginBottom: "1.75rem" }}>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.78rem", color: "rgba(255,255,255,0.45)", lineHeight: 1.6, marginBottom: "1.75rem" }}>
                   Indicado para empresas que desejam corrigir lacunas pontuais, reforçar conceitos, padronizar práticas ou capacitar equipes sobre temas específicos da operação.
                 </p>
 
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem", marginBottom: "1.75rem" }}>
                   {modalityDetails.map((d, i) => (
                     <div key={i} style={{ background: "rgba(255,255,255,0.03)", borderRadius: "3px", padding: "0.65rem 0.85rem" }}>
-                      <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.62rem", color: "rgba(235,193,80,0.7)", letterSpacing: "0.12em", marginBottom: "0.2rem" }}>
+                      <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.62rem", color: "rgba(235,193,80,0.7)", letterSpacing: "0.12em", marginBottom: "0.2rem" }}>
                         {d.label.toUpperCase()}
                       </p>
-                      <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.8)", fontWeight: 500 }}>
+                      <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.8)", fontWeight: 500 }}>
                         {d.value}
                       </p>
                     </div>
@@ -778,7 +837,7 @@ function ModalitiesSection() {
                 </div>
 
                 <div style={{ background: "rgba(235,193,80,0.06)", border: "1px solid rgba(235,193,80,0.18)", borderRadius: "3px", padding: "0.9rem 1rem", marginBottom: "1.5rem" }}>
-                  <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.8rem", color: "rgba(248,213,107,0.85)", lineHeight: 1.6 }}>
+                  <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.8rem", color: "rgba(248,213,107,0.85)", lineHeight: 1.6 }}>
                     Ideal para quem precisa de uma capacitação rápida, prática e conectada a uma necessidade específica da operação.
                   </p>
                 </div>
@@ -791,7 +850,7 @@ function ModalitiesSection() {
                     gap: "0.5rem",
                     background: "linear-gradient(90deg, #B8860B, #EBC150)",
                     color: "#0D1B2A",
-                    fontFamily: "Rajdhani, sans-serif",
+                    fontFamily: "Inter, sans-serif",
                     fontWeight: 700,
                     fontSize: "0.78rem",
                     letterSpacing: "0.1em",
@@ -805,41 +864,48 @@ function ModalitiesSection() {
               </div>
             </div>
 
-            {/* More modalities coming */}
+            {/* Modalidades 02, 03, 04 com hover */}
             <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-              {[
-                { num: "02", title: "Workshops Intensivos", desc: "Imersões de 1 a 2 dias com equipes específicas, para aprofundamento em temas estratégicos da operação." },
-                { num: "03", title: "Programas de Desenvolvimento", desc: "Trilhas de capacitação continuada, com múltiplos módulos e acompanhamento da evolução da equipe." },
-                { num: "04", title: "Mentorias e Consultoria", desc: "Acompanhamento individualizado para líderes, gestores e diretores com foco em resultado operacional." },
-              ].map((m, i) => (
-                <div
-                  key={i}
-                  style={{
-                    background: "rgba(255,255,255,0.025)",
-                    border: "1px solid rgba(235,193,80,0.08)",
-                    borderRadius: "4px",
-                    padding: "1.35rem 1.5rem",
-                    display: "flex",
-                    gap: "1rem",
-                    alignItems: "flex-start",
-                  }}
-                >
-                  <span style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1.2rem", color: "rgba(235,193,80,0.25)", fontWeight: 700, flexShrink: 0, lineHeight: 1 }}>
-                    {m.num}
-                  </span>
-                  <div>
-                    <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.88rem", fontWeight: 600, color: "rgba(255,255,255,0.6)", marginBottom: "0.35rem" }}>
-                      {m.title}
-                    </p>
-                    <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.8rem", color: "rgba(255,255,255,0.38)", lineHeight: 1.6 }}>
-                      {m.desc}
-                    </p>
-                    <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.68rem", color: "#EBC150", letterSpacing: "0.12em", marginTop: "0.6rem", opacity: 0.6 }}>
-                      EM BREVE
-                    </p>
-                  </div>
-                </div>
-              ))}
+              <ModalityHoverCard
+                num="02"
+                title="Workshop In Company"
+                text="Uma experiência mais completa para empresas que desejam aprofundar temas estratégicos, desenvolver equipes e conectar conhecimento, ferramentas e aplicação prática."
+                indicatedFor="Empresas que precisam alinhar liderança, gestão, operação e processos em uma agenda intensiva de desenvolvimento."
+                characteristics={[
+                  "Duração: 5 horas de conteúdo",
+                  "Até 3 temas estratégicos definidos com o cliente",
+                  "Agenda personalizada",
+                  "Palestras, treinamentos práticos e exercícios de aplicação",
+                ]}
+                quote="Ideal para empresas que desejam uma imersão prática para fortalecer equipes, processos e resultados."
+              />
+              <ModalityHoverCard
+                num="03"
+                title="Workshop para Eventos Externos de Logística"
+                text="Formato presencial voltado para empresários, diretores, gestores, líderes e profissionais do setor logístico que buscam atualização, networking e ferramentas práticas para crescimento."
+                indicatedFor="Eventos corporativos, encontros setoriais, imersões, programas de desenvolvimento e experiências presenciais com foco no ecossistema logístico."
+                characteristics={[
+                  "Duração: 6 horas de conteúdo",
+                  "Temas de operação, gestão, vendas, tecnologia, automação e crescimento",
+                  "Networking qualificado",
+                  "Participação de patrocinadores",
+                ]}
+                quote="Ideal para conectar conhecimento, mercado, especialistas e oportunidades em um único ambiente de desenvolvimento."
+              />
+              <ModalityHoverCard
+                num="04"
+                title="Mentorias e Consultoria"
+                text="Acompanhamento individualizado para líderes, gestores e diretores com foco em resultado operacional e desenvolvimento de competências estratégicas de alto impacto."
+                indicatedFor="Líderes, gestores e diretores que buscam desenvolvimento acelerado, alinhamento de equipes e resultados consistentes na operação."
+                characteristics={[
+                  "Sessões individuais ou em grupo",
+                  "Diagnóstico personalizado de competências e lacunas",
+                  "Plano de desenvolvimento estruturado",
+                  "Ferramentas práticas de gestão e liderança",
+                  "Acompanhamento contínuo de resultados",
+                ]}
+                quote="Ideal para líderes que desejam acelerar seu desenvolvimento e transformar os resultados da sua operação."
+              />
             </div>
           </div>
         </FadeIn>
@@ -861,12 +927,12 @@ function CTASection() {
       <div className="max-w-4xl mx-auto px-6 text-center">
         <FadeIn>
           <LogoMark size={60} />
-          <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, marginTop: "1.5rem", marginBottom: "1.25rem" }}>
+          <h2 style={{ fontFamily: "Playfair Display, serif", fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)", fontWeight: 700, color: "#fff", lineHeight: 1.25, marginTop: "1.5rem", marginBottom: "1.25rem" }}>
             Pronto para transformar sua{" "}
             <span style={{ color: "#EBC150" }}>operação logística?</span>
           </h2>
-          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: "560px", margin: "0 auto 2.5rem" }}>
-            Fale com a Log Academy e entenda como podemos estruturar um treinamento personalizado para a sua equipe e os seus resultados.
+          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.75, maxWidth: "560px", margin: "0 auto 2.5rem" }}>
+            Fale com a Lidera Log Academy e entenda como podemos estruturar um treinamento personalizado para a sua equipe e os seus resultados.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
@@ -874,7 +940,7 @@ function CTASection() {
               style={{
                 background: "linear-gradient(90deg, #B8860B, #EBC150)",
                 color: "#0D1B2A",
-                fontFamily: "Rajdhani, sans-serif",
+                fontFamily: "Inter, sans-serif",
                 fontWeight: 700,
                 fontSize: "0.82rem",
                 letterSpacing: "0.1em",
@@ -893,7 +959,7 @@ function CTASection() {
               style={{
                 border: "1px solid rgba(235,193,80,0.4)",
                 color: "#EBC150",
-                fontFamily: "Rajdhani, sans-serif",
+                fontFamily: "Inter, sans-serif",
                 fontWeight: 500,
                 fontSize: "0.82rem",
                 letterSpacing: "0.1em",
@@ -921,32 +987,32 @@ function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-1">
               <LogoMark size={28} />
-              <span style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 600, fontSize: "0.95rem", color: "#fff" }}>
-                Log Academy
+              <span style={{ fontFamily: "Playfair Display, serif", fontWeight: 600, fontSize: "0.95rem", color: "#fff" }}>
+                Lidera Log Academy
               </span>
             </div>
-            <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.78rem", color: "rgba(255,255,255,0.38)", lineHeight: 1.65, marginTop: "0.75rem" }}>
+            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.78rem", color: "rgba(255,255,255,0.38)", lineHeight: 1.65, marginTop: "0.75rem" }}>
               Capacitação corporativa especializada para o setor logístico.
             </p>
           </div>
           <div>
-            <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.65rem", color: "#EBC150", letterSpacing: "0.2em", marginBottom: "1rem" }}>NAVEGAÇÃO</p>
+            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.65rem", color: "#EBC150", letterSpacing: "0.2em", marginBottom: "1rem" }}>NAVEGAÇÃO</p>
             {["Início", "Sobre", "Método", "Modalidades", "Contato"].map((l) => (
-              <a key={l} href={`#${l.toLowerCase()}`} className="block" style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.45)", marginBottom: "0.5rem", textDecoration: "none" }}>
+              <a key={l} href={`#${l.toLowerCase()}`} className="block" style={{ fontFamily: "Inter, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.45)", marginBottom: "0.5rem", textDecoration: "none" }}>
                 {l}
               </a>
             ))}
           </div>
           <div>
-            <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.65rem", color: "#EBC150", letterSpacing: "0.2em", marginBottom: "1rem" }}>CONTATO</p>
-            <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.45)", marginBottom: "0.5rem" }}>
+            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.65rem", color: "#EBC150", letterSpacing: "0.2em", marginBottom: "1rem" }}>CONTATO</p>
+            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.45)", marginBottom: "0.5rem" }}>
               contato@logacademy.com.br
             </p>
           </div>
         </div>
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "1.5rem" }}>
-          <p style={{ fontFamily: "Rajdhani, sans-serif", fontSize: "0.72rem", color: "rgba(255,255,255,0.25)", textAlign: "center" }}>
-            © {new Date().getFullYear()} Log Academy. Todos os direitos reservados.
+          <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.72rem", color: "rgba(255,255,255,0.25)", textAlign: "center" }}>
+            © {new Date().getFullYear()} Lidera Log Academy. Todos os direitos reservados.
           </p>
         </div>
       </div>
@@ -957,7 +1023,7 @@ function Footer() {
 // ─── Landing Page ─────────────────────────────────────────────────────────────
 function LandingPage() {
   return (
-    <div style={{ fontFamily: "Rajdhani, sans-serif" }}>
+    <div style={{ fontFamily: "Inter, sans-serif" }}>
       <Navbar />
       <HeroSection />
       <PainSection />
