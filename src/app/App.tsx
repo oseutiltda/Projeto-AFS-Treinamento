@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { Menu, X, Check, ArrowRight, ChevronRight } from "lucide-react";
 import svgPaths from "@/imports/Group1/svg-5wpa1iwyht";
+import heroImg from "@/imports/image-9.png";
 import solucaoImg from "@/imports/image-7.png";
 import metodologiaImg from "@/imports/image-8.png";
 
@@ -348,24 +349,24 @@ function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Right — workshop image */}
+          {/* Right — workshop image with feather edges */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, delay: 0.4 }}
-            style={{ position: "relative", borderRadius: "6px", overflow: "hidden", border: "1px solid rgba(235,193,80,0.2)", boxShadow: "0 0 60px rgba(235,193,80,0.07)" }}
+            style={{
+              position: "relative",
+              WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 80%, transparent 100%)",
+              WebkitMaskComposite: "source-in",
+              maskImage: "linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 80%, transparent 100%)",
+              maskComposite: "intersect",
+            }}
           >
             <img
-              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=1080"
+              src={heroImg}
               alt="Treinamento corporativo"
-              style={{ width: "100%", height: "460px", objectFit: "cover", display: "block" }}
+              style={{ width: "100%", height: "480px", objectFit: "cover", display: "block" }}
             />
-            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, transparent 50%, rgba(13,27,42,0.7) 100%)" }} />
-            <div style={{ position: "absolute", bottom: "1.5rem", left: "1.5rem" }}>
-              <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.68rem", color: "#EBC150", letterSpacing: "0.2em" }}>
-                TREINAMENTOS IN COMPANY
-              </span>
-            </div>
           </motion.div>
         </div>
       </div>
