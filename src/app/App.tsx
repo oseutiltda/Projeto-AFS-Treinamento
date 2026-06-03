@@ -9,7 +9,12 @@ import metodologiaImg from "@/imports/image-8.png";
 // ─── Inline wordmark SVG (Group_5.svg) ───────────────────────────────────────
 function LogoWordmark() {
   return (
-    <svg width="100%" height="auto" viewBox="0 0 1003 498" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ display: "block" }}>
+    <svg
+      viewBox="0 0 1003 498"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "block", width: "100%", height: "auto" }}
+    >
       <defs>
         <linearGradient id="wm_g0" x1="107" y1="232.5" x2="107" y2="237.5" gradientUnits="userSpaceOnUse">
           <stop stopColor="#F1D05D"/><stop offset="1" stopColor="#DDA31D"/>
@@ -91,6 +96,13 @@ function LogoWordmark() {
 
 const HOLD_DURATION = 5500;
 const EXIT_DURATION = 900;
+const WHATSAPP_PHONE = "5511970768537";
+const WHATSAPP_MESSAGE =
+  "Tenho interesse em conhecer a Lidera Log Academy e saber mais sobre os treinamentos.";
+
+function getWhatsAppHref() {
+  return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+}
 
 // ─── Scroll reveal hook ───────────────────────────────────────────────────────
 function useInView(threshold = 0.12) {
@@ -201,7 +213,9 @@ function Navbar() {
             </a>
           ))}
           <a
-            href="#contato"
+            href={getWhatsAppHref()}
+            target="_blank"
+            rel="noreferrer"
             style={{
               background: "linear-gradient(90deg, #B8860B, #EBC150)",
               color: "#0D1B2A",
@@ -329,7 +343,9 @@ function HeroSection() {
                   CONHEÇA NOSSAS SOLUÇÕES <ArrowRight size={14} />
                 </a>
                 <a
-                  href="#contato"
+                  href={getWhatsAppHref()}
+                  target="_blank"
+                  rel="noreferrer"
                   style={{
                     border: "1px solid rgba(235,193,80,0.5)",
                     color: "#EBC150",
@@ -521,7 +537,7 @@ function ModalityHoverCard({ num, title, text, indicatedFor, characteristics, qu
         <div style={{ background: "rgba(235,193,80,0.06)", border: "1px solid rgba(235,193,80,0.18)", borderRadius: "3px", padding: "0.75rem 1rem", marginBottom: "1rem" }}>
           <p style={{ fontFamily: "Inter, sans-serif", fontSize: "0.78rem", color: "rgba(248,213,107,0.85)", lineHeight: 1.6 }}>{quote}</p>
         </div>
-        <a href="#contato" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "linear-gradient(90deg, #B8860B, #EBC150)", color: "#0D1B2A", fontFamily: "Inter, sans-serif", fontWeight: 700, fontSize: "0.75rem", letterSpacing: "0.1em", padding: "0.7rem 1.5rem", borderRadius: "2px", textDecoration: "none" }}>
+        <a href={getWhatsAppHref()} target="_blank" rel="noreferrer" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "linear-gradient(90deg, #B8860B, #EBC150)", color: "#0D1B2A", fontFamily: "Inter, sans-serif", fontWeight: 700, fontSize: "0.75rem", letterSpacing: "0.1em", padding: "0.7rem 1.5rem", borderRadius: "2px", textDecoration: "none" }}>
           SOLICITAR TREINAMENTO <ArrowRight size={12} />
         </a>
       </div>
@@ -844,7 +860,9 @@ function ModalitiesSection() {
                 </div>
 
                 <a
-                  href="#contato"
+                  href={getWhatsAppHref()}
+                  target="_blank"
+                  rel="noreferrer"
                   style={{
                     display: "inline-flex",
                     alignItems: "center",
@@ -956,7 +974,9 @@ function CTASection() {
               ENTRAR EM CONTATO <ArrowRight size={14} />
             </a>
             <a
-              href="https://wa.me/55"
+              href={getWhatsAppHref()}
+              target="_blank"
+              rel="noreferrer"
               style={{
                 border: "1px solid rgba(235,193,80,0.4)",
                 color: "#EBC150",
